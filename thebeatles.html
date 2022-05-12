@@ -11,8 +11,24 @@
     </head>
     
     <body style="font-family: 'Courier New', Courier, monospace;">
-        <h1 style="font-size: 50px;"><b>The Beatles</b></h1>
-        <img src="beatles.jpg" class="the_beatles">
+        <h1 hidden style="font-size: 50px;"><b>The Beatles</b></h1>
+
+        <img width="300px" src="./assets/images/beatles_black.png" alt="logo da banda the beatles">
+
+        <canvas id="the_beatles" width="100px"></canvas><br/>
+
+        <script>
+
+            const canvas = document.getElementById('the_beatles');
+            const ctx = canvas.getContext('2d');
+
+            ctx.fillStyle = 'black';
+            ctx.fillRect(10, 10, 150, 100);
+
+        </script>
+
+        <img width="300px" src="./assets/images/beatles.jpg" class="the_beatles" alt="imagem dos 4 intregrantes da banda">
+
         <section>
             <h2>About</h2>
             <p>
